@@ -1,0 +1,11 @@
+[[language]]
+name = "markdown"
+comment-tokens = ["-", "+", "*", "- [ ]", ">"]
+
+[[language]]
+name = "python"
+auto-format = true
+formatter = { command = "bash", args = [
+  "-c",
+  "ruff check --fix - | ruff format -",
+] }

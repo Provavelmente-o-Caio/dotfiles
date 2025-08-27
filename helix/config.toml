@@ -1,0 +1,42 @@
+theme = "gruvbox_dark_hard"
+
+[editor]
+line-number = "relative"
+mouse = false
+color-modes = true
+rulers = [80]
+end-of-line-diagnostics = "hint"
+insert-final-newline = true
+trim-final-newlines = true
+trim-trailing-whitespace = true
+
+[editor.statusline]
+left = ["mode", "spinner", "read-only-indicator", "version-control"]
+center = ["file-name", "file-modification-indicator"]
+right = ["diagnostics", "selections", "position", "register", "file-encoding", "file-line-ending", "file-type"]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+character = "╎"
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.lsp]
+display-inlay-hints	= true
